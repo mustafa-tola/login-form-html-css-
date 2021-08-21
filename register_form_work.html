@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="register_form_work.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Register</h1>
+    </div>
+    <div id="input">
+        <form>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" placeholder="Enter Username" id="username" required /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" placeholder="Enter Email" id="email" required /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Enter Password" required /></td>
+                </tr>
+                <tr>
+                    <td>Re enter Password</td>
+                    <td><input type="password" placeholder="Re-enter Password" required /></td>
+                </tr>
+                <tr>
+                    <td>Joining Date</td>
+                    <td><input type="date" placeholder="Enter Date" required /></td>
+                </tr>
+                <tr>
+                    <td for="team">Team</td>
+                    <td>
+                        <select name="team" id="team">
+                            <option value="Development">Development</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Analytics">Analytics</option>
+                            <option value="Testing">Testing</option>
+                            <option value="Management">Management</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td for="role">Working Role</td>
+                    <td>
+                        <select name="role" id="role">
+                            <option value="Developer">Developer</option>
+                            <option value="Salesman">Salesman</option>
+                            <option value="Analyst">Analyst</option>
+                            <option value="Tester">Tester</option>
+                            <option value="Manager">Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Backup Person</td>
+                    <td><input type="text" placeholder="Enter Backup Person" required /></td>
+                </tr>
+                <tr>
+                    <td for="nature">Job Nature</td>
+                    <td>
+                        <select name="nature" id="nature">
+                            <option value="Full Time">Full Time</option>
+                            <option value="Part Time">Part Time</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Register" />
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- user email address
+user name
+joining date
+team role(multiple)
+manager
+-->
